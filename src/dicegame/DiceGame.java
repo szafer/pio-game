@@ -17,7 +17,9 @@ public class DiceGame {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
+
+        Player player = new Player();
+     
         Random rand = new Random();     //obiekt losujący
         int number,                     //wylosowana liczba
             guess;                      //propozycja (strzał) gracza
@@ -28,7 +30,8 @@ public class DiceGame {
             number = rand.nextInt(6) + 1;
             System.out.println("Kostka: " + number);
 
-            guess = rand.nextInt(6) + 1;
+            guess = player.guess();
+            
             System.out.println("Gracz: " + guess);
             
             if (number != guess) {
@@ -38,6 +41,7 @@ public class DiceGame {
         } while (number != guess);
 
         System.out.println("BRAWO!");
+
     }
     
 }
