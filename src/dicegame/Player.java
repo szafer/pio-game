@@ -13,6 +13,16 @@ public class Player {
     private Random rand = new Random();
     
     /**
+     * Konstruktory.
+     */
+    
+    public Player() {}
+    
+    public Player(String name) {
+        setName(name);
+    }
+    
+    /**
      * Metoda "odgadująca" liczbę oczek wyrzuconą na kostce.
      * 
      * @return liczb oczek (1-6)

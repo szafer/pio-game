@@ -18,9 +18,11 @@ public class DiceGame {
      */
     public static void main(String[] args) {
 
-        Player player = new Player();
-        player.setName("Ziuta");
+//        Player player = new Player();
+//        player.setName("Ziuta");
      
+        Player player = new Player("Marian");
+
         Random rand = new Random();     //obiekt losujący
         int number,                     //wylosowana liczba
             guess;                      //propozycja (strzał) gracza
