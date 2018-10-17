@@ -19,6 +19,7 @@ public class DiceGame {
     public static void main(String[] args) {
 
         Player player = new Player();
+        player.setName("Ziuta");
      
         Random rand = new Random();     //obiekt losujący
         int number,                     //wylosowana liczba
@@ -32,7 +33,7 @@ public class DiceGame {
 
             guess = player.guess();
             
-            System.out.println("Gracz: " + guess);
+            System.out.println("Gracz " + player.getName() + ": " + guess);
             
             if (number != guess) {
                 System.out.println("PUDŁO!");
