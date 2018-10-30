@@ -18,7 +18,7 @@ public class DiceGame {
      */
     public static void main(String[] args) {
      
-        Player player = new PlayerHuman("Jasiu");
+        Player player = new PlayerComp("Zenon");
         
         Random rand = new Random();     //obiekt losujący
         int number,                     //wylosowana liczba

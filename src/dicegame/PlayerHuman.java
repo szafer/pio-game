@@ -10,6 +10,9 @@ public class PlayerHuman extends Player {
 
     Scanner cin = new Scanner(System.in);
     
+    /*
+     * Konstruktory 
+     */
     public PlayerHuman() {}
     
     public PlayerHuman(String name) {

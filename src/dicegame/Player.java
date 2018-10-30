@@ -1,17 +1,13 @@
 package dicegame;
 
-import java.util.Random;
-
 /**
  *
  * @author olek
  */
-public class Player {
+public abstract class Player {
        
     private String name = "Domyślny Janusz";
-    
-    private final Random rand = new Random();
-    
+       
     public Player() {}
     
     public Player(String name) {
@@ -19,13 +15,11 @@ public class Player {
     }
 
     /**
-     * Metoda "odgadująca" liczbę oczek wyrzuconą na kostce.
+     * Abstrakcyjna metoda guess().
      * 
-     * @return liczb oczek (1-6)
+     * @return 
      */
-    public int guess() {
-        return rand.nextInt(6) + 1;
-    }
+    public abstract int guess();
 
     /**
      * Geter pola name.
