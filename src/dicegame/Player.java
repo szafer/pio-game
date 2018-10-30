@@ -10,18 +10,14 @@ public class Player {
        
     private String name = "Domyślny Janusz";
     
-    private Random rand = new Random();
-    
-    /**
-     * Konstruktory.
-     */
+    private final Random rand = new Random();
     
     public Player() {}
     
     public Player(String name) {
         setName(name);
     }
-    
+
     /**
      * Metoda "odgadująca" liczbę oczek wyrzuconą na kostce.
      * 

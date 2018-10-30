@@ -17,12 +17,9 @@ public class DiceGame {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-
-//        Player player = new Player();
-//        player.setName("Ziuta");
      
-        Player player = new Player("Marian");
-
+        Player player = new PlayerHuman("Jasiu");
+        
         Random rand = new Random();     //obiekt losujący
         int number,                     //wylosowana liczba
             guess;                      //propozycja (strzał) gracza
