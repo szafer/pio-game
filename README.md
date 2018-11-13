@@ -10,6 +10,8 @@ Zastosowałem tu trochę nietypowy sposób pracy z repozytorium. Kolejne wersje 
 - [step-4](https://github.com/oleklamza/pio-game/tree/step-4): Konstruktory w klasie `Player`.
 - [step-5](https://github.com/oleklamza/pio-game/tree/step-5): Dodana klasa `PlayerHuman`, która dziedziczy po `Player` i wprowadza inny sposób odgadywania.
 - [step-6](https://github.com/oleklamza/pio-game/tree/step-6): Poprawiona struktura klas graczy: abstrakcyjna klasa bazowa `Player` z abstrakcyjną metodą `guess()`. Wprowadzona klasa `PlayerComp`.
+- [step-7](https://github.com/oleklamza/pio-game/tree/step-7): W przypadku przekazania do settera `setName()` klasy `Player` nieprawidłowego imienia, rzucany jest wyjątek `IllegalArgumentException`.
+- [step-8](https://github.com/oleklamza/pio-game/tree/step-8): Poprawność imienia sprawdzamy za pomocą wyrażenia regularnego.
 
 
 
