@@ -22,7 +22,7 @@ public class DiceGame {
         
         try {
             
-            player.setName("");
+            player.setName("3dek");
             
         } catch (IllegalArgumentException ex) {
             System.err.println("Błąd! " + ex.getMessage());

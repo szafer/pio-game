@@ -38,7 +38,7 @@ public abstract class Player {
      * @param name imię gracza
      */
     public void setName(String name) {
-        if (name != null && !name.isEmpty()) {
+        if (name != null && name.matches("^[a-zA-Z][a-zA-Z0-9@\\-_.]{2,29}$")) {
             this.name = name;
         } else {
             throw new IllegalArgumentException("Nieprawidłowe imię.");
