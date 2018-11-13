@@ -18,7 +18,17 @@ public class DiceGame {
      */
     public static void main(String[] args) {
      
-        Player player = new PlayerComp("Zenon");
+        Player player = new PlayerComp();
+        
+        try {
+            
+            player.setName("");
+            
+        } catch (IllegalArgumentException ex) {
+            System.err.println("Błąd! " + ex.getMessage());
+        } catch (Exception ex) {
+            System.err.println("Nieznany błąd. Skontaktuj się z administratorem.");
+        }
         
         Random rand = new Random();     //obiekt losujący
         int number,                     //wylosowana liczba
