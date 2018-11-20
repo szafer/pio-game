@@ -8,10 +8,7 @@
         </group>
         <group name="PIO">
             <file>file:/home/olek/Projekty/zajecia/pio/DiceGame/pio-game/src/dicegame/DiceGame.java</file>
-            <file>file:/home/olek/Projekty/zajecia/pio/DiceGame/pio-game/src/dicegame/PlayerHuman.java</file>
-            <file>file:/home/olek/Projekty/zajecia/pio/DiceGame/pio-game/src/dicegame/Player.java</file>
-            <file>file:/home/olek/Projekty/zajecia/pio/DiceGame/pio-game/src/dicegame/PlayerDumb.java</file>
-            <file>file:/home/olek/Projekty/zajecia/pio/DiceGame/pio-game/src/dicegame/PlayerComp.java</file>
+            <file>file:/home/olek/Projekty/zajecia/pio/DiceGame/pio-game/src/dicegame/Game.java</file>
         </group>
     </open-files>
 </project-private>
