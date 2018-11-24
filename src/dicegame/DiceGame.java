@@ -1,10 +1,5 @@
 package dicegame;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Random;
-
 /**
  * Gra w odgadywanie wylosowanej liczby.
  * 
@@ -23,10 +18,12 @@ public class DiceGame {
 
         Game game = new Game();
         
-        Player player = new PlayerComp("Marian");
+        Player player = new PlayerComp("Janusz");
                 
         game.addPlayer(player);
-        
+        game.addPlayer(new PlayerComp("Heniek"));
+        game.addPlayer(new PlayerComp("Ziuta"));
+                
         game.play();
     }
     

@@ -1,5 +1,8 @@
 package dicegame;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 import java.util.Random;
 
 /**
@@ -8,7 +11,8 @@ import java.util.Random;
  */
 public class Game {
 
-    protected Player player;
+    protected List<Player> players = new ArrayList();
+            
     protected Random rand = new Random();     //obiekt losujący
             
     /**
@@ -16,7 +20,11 @@ public class Game {
      * @param player 
      */
     public void addPlayer(Player player) {
-        this.player = player;
+        if (player != null) {
+            players.add(player);
+        } else {
+            throw new IllegalArgumentException("Gracz nie może być null.");
+        }
     }
     
     /**
@@ -26,23 +34,32 @@ public class Game {
         int number,                     //wylosowana liczba
             guess;                      //propozycja (strzał) gracza
         
+        boolean oneMore;
+        
         do {
+            oneMore = true;
+            
             System.out.println("---------------------");
 
             number = rand.nextInt(6) + 1;
             System.out.println("Kostka: " + number);
 
-            guess = player.guess();
-            
-            System.out.println("Gracz " + player.getName() + ": " + guess);
-            
-            if (number != guess) {
-                System.out.println("PUDŁO!");
-            }            
-        
-        } while (number != guess);
+            for (Player player : players) {
+                guess = player.guess();
 
-        System.out.println("BRAWO!");
+                System.out.println("Gracz " + player.getName() + ": " + guess);
+
+                if (number != guess) {
+                    System.out.println("PUDŁO!");
+                } else {
+                    oneMore = false;
+                    System.out.println("BRAWO!");
+                }            
+            }
+        
+        } while (oneMore);
+
+        
 
     }
     
