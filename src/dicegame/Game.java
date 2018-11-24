@@ -45,6 +45,43 @@ public class Game {
     /**
      * 
      */
+    public void printPlayers() {
+        for (Player player : players) {
+            System.out.println(player.getName());
+        }
+    }
+    
+    /**
+     * 
+     * @param name 
+     */
+    public void removePlayer(String name) {
+        
+//      Klasyczne rozwiązanie z pętlą while ma tę wadę, że obiekt iteratora jest
+//      widoczny w całej metodzie.
+        // Iterator<Player> it = players.iterator();
+        // while (it.hasNext()) {
+        
+//      Wrzucenie inicjalizacji iteratora i wywołanie hasNext() do pętli for
+//      rozwiązuje ten problem.
+        for (Iterator<Player> it = players.iterator() ; it.hasNext(); ) {
+            Player player = it.next();
+            if (player.getName().equals(name)) {
+                it.remove();
+                break;
+            }
+        }
+        
+//      W Java 8 zostało wprowadzonych sporo udogodnień.
+//      Między innymi dostajemy metodę removeIf(), która pozwala na
+//      zgrabne rozwiązanie problemu usuwania graczy o danym imieniu.
+//      Dodatkowo do poczytania: wyrażenia lambda.
+        // players.removeIf(player -> player.getName().equals(name));
+    }
+    
+    /**
+     * 
+     */
     public void play() {
         int number,                     //wylosowana liczba
             guess;                      //propozycja (strzał) gracza
@@ -73,8 +110,6 @@ public class Game {
             }
         
         } while (oneMore);
-
-        
 
     }
     
