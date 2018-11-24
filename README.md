@@ -12,7 +12,10 @@ Zastosowałem tu trochę nietypowy sposób pracy z repozytorium. Kolejne wersje 
 - [step-6](https://github.com/oleklamza/pio-game/tree/step-6): Poprawiona struktura klas graczy: abstrakcyjna klasa bazowa `Player` z abstrakcyjną metodą `guess()`. Wprowadzona klasa `PlayerComp`.
 - [step-7](https://github.com/oleklamza/pio-game/tree/step-7): W przypadku przekazania do settera `setName()` klasy `Player` nieprawidłowego imienia, rzucany jest wyjątek `IllegalArgumentException`.
 - [step-8](https://github.com/oleklamza/pio-game/tree/step-8): Poprawność imienia sprawdzamy za pomocą wyrażenia regularnego.
-- [step-9](https://github.com/oleklamza/pio-game/tree/step-9): Logika gry przeniesiona do klasy Game.
+- [step-9](https://github.com/oleklamza/pio-game/tree/step-9): Logika gry przeniesiona do klasy `Game`.
+- [step-10](https://github.com/oleklamza/pio-game/tree/step-10): Metody `addPlayer()` i `play()` w klasie `Game` przystosowane do trybu multiplayer.
+- [step-11](https://github.com/oleklamza/pio-game/tree/step-11): Imiona graczy muszą być unikatowe -- modyfikacja w metodzie `addPlayer()`.
+- [step-12](https://github.com/oleklamza/pio-game/tree/step-12): Dodane metody `removePlayer()` i `printPlayers()`.
 
 
 
