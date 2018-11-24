@@ -21,10 +21,25 @@ public class Game {
      */
     public void addPlayer(Player player) {
         if (player != null) {
-            players.add(player);
+            
+            if (!nameExists(player.getName())) {
+                players.add(player);
+            } else {
+                player.setName(player.getName() + rand.nextInt(10));
+                addPlayer(player);
+            }            
         } else {
             throw new IllegalArgumentException("Gracz nie może być null.");
         }
+    }
+    
+    private boolean nameExists(String name) {
+        for (Player player : players) {
+            if (player.getName().equals(name)) {
+                return true;
+            }
+        }
+        return false;
     }
     
     /**

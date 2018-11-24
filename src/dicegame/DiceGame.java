@@ -21,9 +21,9 @@ public class DiceGame {
         Player player = new PlayerComp("Janusz");
                 
         game.addPlayer(player);
-        game.addPlayer(new PlayerComp("Heniek"));
+        game.addPlayer(new PlayerComp("Janusz"));
         game.addPlayer(new PlayerComp("Ziuta"));
-                
+                       
         game.play();
     }
     
