@@ -18,6 +18,13 @@ public class Game {
     protected Statistics stats;
 
     /**
+     * Konstruktor bezparametrowy tworzy pusty obiekt statystyk.
+     */
+    public Game() {
+        this.stats = new NullStatistics();
+    }
+    
+    /**
      * Konstruktor przyjmujący obiekt statystyk.
      * 
      * @param stats 

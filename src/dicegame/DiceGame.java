@@ -16,9 +16,9 @@ public class DiceGame {
      */
     public static void main(String[] args) {
 
-        Statistics stats = new Statistics();
+//        WinStatistics stats = new WinStatistics();
         
-        Game game = new Game(stats);
+        Game game = new Game();
 
         game.addPlayer(new PlayerComp("Janusz"));
         game.addPlayer(new PlayerComp("Marian"));
@@ -29,7 +29,7 @@ public class DiceGame {
         }
         
         System.out.println("******** STATYSTYKI *********");
-        stats.print();
+//        stats.print();
         
     }
     
