@@ -16,19 +16,21 @@ public class DiceGame {
      */
     public static void main(String[] args) {
 
-        Game game = new Game();
+        Statistics stats = new Statistics();
         
-        Player player = new PlayerComp("Janusz");
-                
-        game.addPlayer(player);
+        Game game = new Game(stats);
+
+        game.addPlayer(new PlayerComp("Janusz"));
         game.addPlayer(new PlayerComp("Marian"));
         game.addPlayer(new PlayerComp("Ziuta"));
-                       
-        game.removePlayer("Marian");
         
-        game.printPlayers();
+        for (int i=0; i<100; ++i) {
+            game.play();
+        }
         
-        game.play();
+        System.out.println("******** STATYSTYKI *********");
+        stats.print();
+        
     }
     
 }

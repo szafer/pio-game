@@ -14,7 +14,18 @@ public class Game {
     protected List<Player> players = new ArrayList();
             
     protected Random rand = new Random();     //obiekt losujący
-            
+       
+    protected Statistics stats;
+
+    /**
+     * Konstruktor przyjmujący obiekt statystyk.
+     * 
+     * @param stats 
+     */
+    public Game(Statistics stats) {
+        this.stats = stats;
+    }
+    
     /**
      * 
      * @param player 
@@ -105,6 +116,7 @@ public class Game {
                     System.out.println("PUDŁO!");
                 } else {
                     oneMore = false;
+                    stats.andTheWinnerIs(player.getName()); // doliczenie punktu
                     System.out.println("BRAWO!");
                 }            
             }
