@@ -1,5 +1,9 @@
 package dicegame;
 
+import dicegame.players.PlayerComp;
+import dicegame.statistics.Statistics;
+import dicegame.statistics.WinStatistics;
+
 /**
  * Gra w odgadywanie wylosowanej liczby.
  * 
@@ -16,9 +20,9 @@ public class DiceGame {
      */
     public static void main(String[] args) {
 
-//        WinStatistics stats = new WinStatistics();
+        Statistics stats = new WinStatistics();
         
-        Game game = new Game();
+        Game game = new Game(stats);
 
         game.addPlayer(new PlayerComp("Janusz"));
         game.addPlayer(new PlayerComp("Marian"));
@@ -29,7 +33,7 @@ public class DiceGame {
         }
         
         System.out.println("******** STATYSTYKI *********");
-//        stats.print();
+        stats.print();
         
     }
     

@@ -1,5 +1,8 @@
 package dicegame;
 
+import dicegame.statistics.NullStatistics;
+import dicegame.statistics.Statistics;
+import dicegame.players.Player;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;

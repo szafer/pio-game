@@ -1,5 +1,5 @@
 
-package dicegame;
+package dicegame.statistics;
 
 import java.util.HashMap;
 import java.util.Map;
