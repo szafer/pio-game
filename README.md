@@ -16,6 +16,9 @@ Zastosowałem tu trochę nietypowy sposób pracy z repozytorium. Kolejne wersje 
 - [step-10](https://github.com/oleklamza/pio-game/tree/step-10): Metody `addPlayer()` i `play()` w klasie `Game` przystosowane do trybu multiplayer.
 - [step-11](https://github.com/oleklamza/pio-game/tree/step-11): Imiona graczy muszą być unikatowe -- modyfikacja w metodzie `addPlayer()`.
 - [step-12](https://github.com/oleklamza/pio-game/tree/step-12): Dodane metody `removePlayer()` i `printPlayers()`.
+- [step-13](https://github.com/oleklamza/pio-game/tree/step-13): Dodana klasa `Statistics` z metodami umożliwiającymi prowadzenie statystyk wygranych. Obiekt klasy `Statistics` jest przekazywany do obiektu gry poprzez konstruktor `Game(Statistics)`.
+- [step-14](https://github.com/oleklamza/pio-game/tree/step-14): Dodanie możliwości przeprowadzania gry bez statystyk (konstruktor bezparametrowy `Game()`). Zastosowanie wzorca _Null Object_ (pusty obiekt): interfejs `Statistics`, klasa `NullStatistics`. Dotychczasowa klasa statystyk zmieniła nazwę na `WinStatistics`.
+- [step-15](https://github.com/oleklamza/pio-game/tree/step-15): Wielkie końcowe porządki: utworzone dwa pakiety (_players_, _statistics_), w których wylądowały odpowiednie klasy.
 
 
 
